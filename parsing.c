@@ -44,7 +44,7 @@ int	ft_allint(char **str)
 	while (str[i])
 	{
 		j = 0;
-		if (str[i][j] == '-')
+		if (str[i][j] == '-' && str[i][j + 1] != '\0')
 			j++;
 		while (str[i][j])
 		{
